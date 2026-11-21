@@ -42,6 +42,7 @@ app = FastAPI(title="Multimodal E-Commerce Recommender", version="0.4.0")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
+        "https://recommendedengine.vercel.app",
         "http://localhost:5174",
         "http://127.0.0.1:5174",
         "http://localhost:5173",
